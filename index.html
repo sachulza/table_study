@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- //meta -->
+
+    <!-- css -->
+    <!-- plug-in css -->
+    <link rel="stylesheet" />
+    <!-- //plug-in css -->
+
+    <!-- ui css -->
+    <link rel="stylesheet" href="./assets/scss/style.css" />
+    <!-- //ui css -->
+    <!-- //css -->
+
+    <title>UI table study</title>
+  </head>
+  <body>
+    <!-- 
+    class naming : 
+        - 공통적으로 쓰는 큰 틀 레이아웃 (layout)
+        - 공통으로 여러곳에 사용 시 (ui)
+        - 특정 페이지만 사용 시 (page)
+        - 특이 케이스 (main, sub)
+    -->
+
+    <div class="page-main-wrap">
+      <div class="masthead-wrap">
+        <div class="layout-inner">
+          <span class="nuri-txt"
+            >이 누리집은 대한민국 공식 전자정부 누리집입니다.</span
+          >
+        </div>
+      </div>
+
+      <!-- header -->
+      <header class="layout-header-wrap">
+        <div class="layout-inner flex1">
+          <div class="logo-container">
+            <a href="#" class="icons-logo bgi"></a>
+            <nav class="nav-container">
+              <button href="#" class="nav-search">통합검색</button>
+              <button href="#" class="nav-menu">전체메뉴</button>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- //header -->
+
+      <section class="layout-gnb-wrap"></section>
+      <section class="layout-inner" style="margin-bottom: 50px">
+        <aside class="aside-wrap"></aside>
+        <div class="page-contents-wrap">
+          <div class="title-container">
+            <h2 class="title">보도자료(전체)</h2>
+            <div class="share-sns">
+              <a href="" class="share-btn">
+                <i></i>
+              </a>
+            </div>
+          </div>
+          <div class="contents-wrap">
+            <ul class="year-wrap">
+              <li>
+                <button href="" class="year active">전체</button>
+              </li>
+              <li>
+                <button href="" class="year">2025</button>
+              </li>
+              <li>
+                <button href="" class="year">2024</button>
+              </li>
+              <li>
+                <button href="" class="year">2023</button>
+              </li>
+              <li>
+                <button href="" class="year">2022</button>
+              </li>
+              <li>
+                <button href="" class="year">2021</button>
+              </li>
+              <li>
+                <button href="" class="year">2020</button>
+              </li>
+            </ul>
+
+            <div class="info-wrap">
+              <p class="count">
+                전체 <span class="total">7,511</span>건, 현재 페이지
+                <span class="info-page">1</span>
+                /
+                <span class="total">752</span>
+              </p>
+              <div class="search-container">
+                <form action="">
+                  <fieldset>
+                    <legend class="blind">보도자료 검색</legend>
+                    <span class="form-select">
+                      <select name="" id="">
+                        <option value="title">제목</option>
+                        <option value="author">작성자</option>
+                      </select>
+                    </span>
+                    <span>
+                      <input
+                        type="text"
+                        title="검색어를 입력하세요"
+                        placeholder="검색어를 입력하세요"
+                        class="form-input"
+                    /></span>
+                    <span> <button class="search-icon"></button> </span>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+            <div class="list-wrap">
+              <table class="list-table">
+                <tr>
+                  <th>번호</th>
+                  <th>제목</th>
+                  <th>작성자</th>
+                  <th>작성일자</th>
+                </tr>
+                <tr>
+                  <td>7511</td>
+                  <td class="list-title">
+                    <a href=""> 테이블 시작점. 총 10개.</a>
+                  </td>
+                  <td>양지병원</td>
+                  <td>2025-01-30</td>
+                </tr>
+                <tr>
+                  <td>7512</td>
+                  <td class="list-title">
+                    <a href="">
+                      인플루엔자 정점 지나 감소세지만, 유행기준보다 크게 높아 설
+                      연휴 중 예방수칙 철저</a
+                    >
+                  </td>
+                  <td>감염병관리과</td>
+                  <td>2025-01-24</td>
+                </tr>
+                <tr>
+                  <td>7511</td>
+                  <td class="list-title">
+                    <a href="">
+                      인플루엔자 정점 지나 감소세지만, 유행기준보다 크게 높아 설
+                      연휴 중 예방수칙 철저</a
+                    >
+                  </td>
+                  <td>감염병관리과</td>
+                  <td>2025-01-24</td>
+                </tr>
+                <tr>
+                  <td>7511</td>
+                  <td class="list-title">
+                    <a href="">
+                      인플루엔자 정점 지나 감소세지만, 유행기준보다 크게 높아 설
+                      연휴 중 예방수칙 철저</a
+                    >
+                  </td>
+                  <td>감염병관리과</td>
+                  <td>2025-01-24</td>
+                </tr>
+                <tr>
+                  <td>7511</td>
+                  <td class="list-title">
+                    <a href="">
+                      인플루엔자 정점 지나 감소세지만, 유행기준보다 크게 높아 설
+                      연휴 중 예방수칙 철저</a
+                    >
+                  </td>
+                  <td>감염병관리과</td>
+                  <td>2025-01-24</td>
+                </tr>
+                <tr>
+                  <td>7511</td>
+                  <td class="list-title">
+                    <a href="">
+                      인플루엔자 정점 지나 감소세지만, 유행기준보다 크게 높아 설
+                      연휴 중 예방수칙 철저</a
+                    >
+                  </td>
+                  <td>감염병관리과</td>
+                  <td>2025-01-24</td>
+                </tr>
+                <tr>
+                  <td>7511</td>
+                  <td class="list-title">
+                    <a href="">
+                      인플루엔자 정점 지나 감소세지만, 유행기준보다 크게 높아 설
+                      연휴 중 예방수칙 철저</a
+                    >
+                  </td>
+                  <td>감염병관리과</td>
+                  <td>2025-01-24</td>
+                </tr>
+                <tr>
+                  <td>7511</td>
+                  <td class="list-title">
+                    <a href="">
+                      인플루엔자 정점 지나 감소세지만, 유행기준보다 크게 높아 설
+                      연휴 중 예방수칙 철저</a
+                    >
+                  </td>
+                  <td>감염병관리과</td>
+                  <td>2025-01-24</td>
+                </tr>
+                <tr>
+                  <td>7511</td>
+                  <td class="list-title">
+                    <a href="">
+                      인플루엔자 정점 지나 감소세지만, 유행기준보다 크게 높아 설
+                      연휴 중 예방수칙 철저</a
+                    >
+                  </td>
+                  <td>감염병관리과</td>
+                  <td>2025-01-24</td>
+                </tr>
+                <tr>
+                  <td>7510</td>
+                  <td class="list-title">
+                    <a href=""> 이거 보여주려 어그로 끌었다</a>
+                  </td>
+                  <td>철찌과</td>
+                  <td>2025-01-20</td>
+                </tr>
+              </table>
+            </div>
+            <div class="btn-page-wrap">
+              <a href="" class="circle-left">&laquo;</a>
+              <a href="" class="circle-left">&lsaquo;</a>
+              <div class="number-wrap">
+                <a href="" class="number-box">1</a>
+                <a href="" class="number-box">2</a>
+                <a href="" class="number-box">3</a>
+                <a href="" class="number-box">4</a>
+                <a href="" class="number-box">5</a>
+                <a href="" class="number-box">6</a>
+                <a href="" class="number-box">7</a>
+                <a href="" class="number-box">8</a>
+                <a href="" class="number-box">9</a>
+                <a href="" class="number-box">10</a>
+              </div>
+              <a href="" class="circle-right">&rsaquo;</a>
+              <a href="" class="circle-right">&raquo;</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer>
+        <!-- related site -->
+        <section class="layout-related-site">
+          <div class="total-wrap">
+            <div class="footer-layout-inner">
+              <button class="site-container">질병관리청 소속기관</button>
+              <button class="site-container">사업별 누리집</button>
+              <button class="site-container">관련국외기관</button>
+            </div>
+          </div>
+        </section>
+        <!-- //related site -->
+
+        <!-- footer content -->
+        <section class="layout-footer-content">
+          <div class="total-wrap">
+            <div class="content-inner">
+              <figure class="icons-logo bgi"></figure>
+              <div class="content-wrap">
+                <div class="address-wrap">
+                  <p class="address-container">
+                    (28159) 충북 청주시 흥덕구 오송읍 오송생명2로 187
+                    오송보건의료행정타운내
+                  </p>
+                  <ul class="tel-wrap">
+                    <li class="tel-container">
+                      <p class="tel-subject">대표전화</p>
+                      <div class="tel-desc bold">
+                        <p>1339</p>
+                        <!-- <div class="divider"></div> -->
+                        <p>(무료)</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="link-wrap">
+                  <div class="location-wrap">
+                    <button class="ui-btn-arrow-r">찾아오시는 길</button>
+                    <button class="ui-btn-arrow-r">이용안내</button>
+                  </div>
+                  <div class="sns-wrap">
+                    <a href="" class="sns-container">
+                      <span class="sr-only">인스타그램</span>
+                      <i class="icons-instagram"></i>
+                    </a>
+                    <a href="" class="sns-container">
+                      <span class="sr-only">유튜브</span>
+                      <i class="icons-youtube"></i>
+                    </a>
+                    <a href="" class="sns-container">
+                      <span class="sr-only">트위터</span>
+                      <i class="icons-twitter"></i>
+                    </a>
+                    <a href="" class="sns-container">
+                      <span class="sr-only">페이스북</span>
+                      <i class="icons-facebook"></i>
+                    </a>
+                    <a href="" class="sns-container">
+                      <span class="sr-only">블로그</span>
+                      <i class="icons-blog"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="layout-footer-copyright">
+                <div class="link-copy">
+                  <a href="" class="bold">개인정보처리방침</a>
+                  <a href="">저작권정책</a>
+                  <a href="">웹 접근성 품질인증 마크 획득</a>
+                </div>
+                <p class="copyright-all">
+                  COPYRIGHT KDCA. ALL RIGHTS RESERVED.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- //footer content -->
+      </footer>
+      <!-- //footer -->
+    </div>
+
+    <!-- js -->
+    <!-- plug-in js -->
+
+    <!-- //plug-in js -->
+    <!-- //js -->
+  </body>
+</html>
